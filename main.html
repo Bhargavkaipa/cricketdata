@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>CW2-Data Visualisation and Analytics sk2152(H00423225)</title>
+
+    <link rel="stylesheet" href="styling.css" />
+    <link rel="stylesheet" href="layout.css" />
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+
+    <script src="main.js" type="module"></script>
+  </head>
+  <body>
+    <main>
+      <h1>One-Day Internationals</h1>
+      <h4>Sport: Cricket</h4>
+      <p>
+        cricket is one of the most popular sports worldwide with a large fan base.
+        out of many formats played such as T-20, One-Day internationals, and test Matches, 
+        One-Day Internationals are the most important and highly valued format
+        The graphs below compare different cricket teams and cricket players depending on how many victories each team has had for the subsequent year (from 1996 to 2020) and how many runs each player has scored overall for that year (1996-2020).
+There may be a favourite cricket team or cricketer for each person. You may follow the progress of your favourite team and see the ups and downs of your favourite batsmen by using the charts below.    
+      </p>
+      <h2>Changes to the top 10</h2>
+      <p>
+        Let's start by examining the top 10 cricket teams and top 10 batsmen over the years, as well as how they change over time.
+      </p>
+      <p>
+        To witness the team names and player names shift between ranks from 1996 to 2020 automatically, try clicking the play buttons.
+      </p>
+      <div class="pop-charts">
+        <div id="top-s"></div>
+        <div id="top-ew"></div>
+      </div>
+      <p>
+        It seems that some names are persistent while others come and go. In
+        Scotland, Jack is present the entire time from 1996 to 2020 (even ending
+        as the most popular). Lewis springs up in 1998 and sticks around for two
+        decades until 2018. One of Emma or Emily is also present for the entire
+        24 year period.
+      </p>
+      <p>
+        Meanwhile, in England and Wales, Jack sits as the most popular name all
+        the way until 2008 and then remains present until 2020. William appears
+        in 2004 shortly followed by Harry in 2006, possibly inspired by the
+        royal princes. George joins the ranks in 2014 (possibly following the
+        birth of Prince George in 2013) and quickly rises to the 2nd most
+        popular spot through to 2020.
+      </p>
+      <h2>A macroscopic view of name popularity</h2>
+      <p>
+        Having observed the changes in rank among the most popular names, it
+        seems as though some stay steadily popular while others drop off or pop
+        up. By taking a look at the full history of a wider set of names, we can
+        see how typical it is for their popularity to remain steady.
+      </p>
+      <div class="pop-charts">
+        <div id="pop-s"></div>
+        <div id="pop-ew"></div>
+      </div>
+      <p>
+        One interesting case is the name Aria in Scotland. It appears to quickly
+        gain and lose popularity between 2005 to 2010, at which point it
+        steadily gains enough to belong to the top 50 most popular names in
+        2020. While speculative, it's fun to note that the Game of Thrones HBO
+        series first aired in 2011, which features a popular character names
+        Arya.
+      </p>
+      <p>
+        It's quite clear from these charts that there's a lot of osciliation
+        among names that aren't consistently ranked at the very top — some
+        exhibiting such large swings in popularity. This raises a question:
+        which names have seen the biggest swings in popularity?
+      </p>
+      <div class="pop-charts">
+        <div id="swing-s"></div>
+        <div id="swing-ew"></div>
+      </div>
+      <p>
+        These charts provide a more interesting view on the constantly swaying
+        public opinion of some names. This time there is even a clear cultural
+        influence, with the names Aria and Arya in Scotland plus Aairah and
+        Ariyah in England and Wales all seeing significant increases in
+        popularity following the year 2011 when Game of Thrones first aired.
+      </p>
+      <h2>Alphabetical coverage</h2>
+      <p>
+        You may notice in all of the data above, fewer names start with letters
+        towards the end of the alphabet. This may be unsurprising since chapter
+        lengths in any English dictonary would suggest they're less common
+        leading letters. However, it does prompt a question: which letters are
+        most commonly a first initial and how does the distribution compare
+        across regions and in time?
+      </p>
+      <p>
+        Try using the checkbox to count each individual baby given a name,
+        instead of just each name once.
+      </p>
+      <div class="pop-charts">
+        <div id="initial-s"></div>
+        <div id="initial-ew"></div>
+      </div>
+      <p>
+        It's clear from comparing the per-name and per-baby counts that there's
+        no correlation between the number of names that begin with a letter and
+        the number of babys given a name with that same initial. For example, in
+        2020 in Scotland the letter K is the 5th most common inital among names, but
+        drops to 15th most common among individual babies.
+      </p>
+      <p>
+        There appears to be no significant regional difference in the
+        distribution of first initials. Although there are small differences
+        such as in Scotland a larger percentage of baby names begin with the
+        letter C — perhaps due to some historical influences on local dialects
+        and names.
+      </p>
+      <p>
+        One clear distinction between the regions is that England has a much
+        wider variety of baby names when comparing the absolute numbers — while
+        the significant population difference is a key factor here, it may also
+        indicate a more diverse mix of cultures in comparison to Scotland.
+      </p>
+    </main>
+    <footer>
+      <p>
+        All data used is available under the Open Government Licence from the
+        Office for National Statistics (English and Welsh data) and the National
+        Records of Scotland (Scottish data).
+      </p>
+    </footer>
+  </body>
+</html>
+
